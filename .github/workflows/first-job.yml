@@ -1,11 +1,17 @@
 name: first workflow
 on: workflow_dispatch
+env:
+  NUMBER: workflowlevel
 jobs:
   first-job:
     runs-on: ubuntu-latest
+    env:
+      NUMBER: joblvel
     steps:
       - name: print greeting
-        run: echo "hello world"
+        env:
+          NUMBER: steplevel
+        run: echo $NUMBER
       - name: print goodbye
         run: echo "done-bye!"
       
