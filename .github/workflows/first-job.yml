@@ -9,8 +9,6 @@ jobs:
       NUMBER: joblvel
     steps:
       - name: print greeting
-        env:
-          NUMBER: steplevel
         run: echo $NUMBER
       - name: print goodbye
         run: echo "done-bye!"
