@@ -5,8 +5,7 @@ env:
 jobs:
   first-job:
     runs-on: ubuntu-latest
-    env:
-      NUMBER: joblvel
+   
     steps:
       - name: print greeting
         run: echo $NUMBER
